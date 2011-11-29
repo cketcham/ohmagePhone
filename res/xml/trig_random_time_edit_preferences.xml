@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Preference
+        android:key="actions"
+        android:persistent="false"
+        android:summary="None"
+        android:title="@string/trigger_actions_title" />
+
+    <Preference
+        android:key="repeat_days"
+        android:persistent="false"
+        android:summary="Everyday"
+        android:title="@string/trigger_time_repeat_title" />
+
+    <org.ohmage.triggers.utils.TimePickerPreference
+        android:key="interval_start_time"
+        android:persistent="false"
+        android:summary="@string/trigger_time_not_selected"
+        android:title="@string/trigger_time_start_title" />
+
+    <org.ohmage.triggers.utils.TimePickerPreference
+        android:key="interval_end_time"
+        android:persistent="false"
+        android:summary="@string/trigger_time_not_selected"
+        android:title="@string/trigger_time_end_title" />
+
+</PreferenceScreen>

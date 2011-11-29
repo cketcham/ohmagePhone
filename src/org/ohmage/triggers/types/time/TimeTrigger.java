@@ -131,9 +131,13 @@ public class TimeTrigger extends TriggerBase {
 		
 	}
 
+	protected TimeTrigDesc getTimeTrigDesc() {
+		return new TimeTrigDesc();
+	}
+	
 	@Override
 	public String getDisplaySummary(Context context, String trigDesc) {
-		TimeTrigDesc conf = new TimeTrigDesc();
+		TimeTrigDesc conf = getTimeTrigDesc();
 		
 		if(!conf.loadString(trigDesc)) {
 			return null;
@@ -144,7 +148,7 @@ public class TimeTrigger extends TriggerBase {
 
 	@Override
 	public String getDisplayTitle(Context context, String trigDesc) {
-		TimeTrigDesc conf = new TimeTrigDesc();
+		TimeTrigDesc conf = getTimeTrigDesc();
 		
 		if(!conf.loadString(trigDesc)) {
 			return null;

@@ -60,7 +60,7 @@ public class TimeTrigDesc {
 		initialize(true);
 	}
 	
-	private void initialize(boolean repeatStatus) {
+	protected void initialize(boolean repeatStatus) {
 		mIsRandomized = false;
 		mIsRangeEnabled = false;
 		

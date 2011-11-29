@@ -18,4 +18,5 @@
 	<string name="trigger_time_no_survey_selected">No survey selected!</string>
 	<string name="trigger_time_no_survey_selected_text">Make sure that at least one survey is selected</string>
 
+	<string name="trigger_random_time_display_name">Random Time Reminder</string>
 </resources>
